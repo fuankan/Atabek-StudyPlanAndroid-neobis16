@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="main_activity_bg">#FFC1E8FF</color>
+    <color name="text_color_buttons_second_card">#003C68</color>
 
 </resources>
