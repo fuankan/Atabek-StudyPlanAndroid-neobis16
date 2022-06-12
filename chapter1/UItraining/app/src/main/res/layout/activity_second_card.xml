@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0ecfc"
+    android:orientation="vertical"
     tools:context=".SecondCardActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -73,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:src="@drawable/teeth_second_card"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button_call_second_card"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <TextView
@@ -106,7 +107,7 @@
         app:layout_constraintGuide_percent=".40" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/button_call_second_card"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
@@ -114,16 +115,16 @@
         android:text="To call"
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
-        app:icon="@drawable/call_second_card"
+        app:icon="@drawable/ic_call_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@id/button_web_second_card"
+        app:layout_constraintEnd_toStartOf="@+id/button_whatsapp_second_card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button2"
+        android:id="@+id/button_whatsapp_second_card"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
@@ -133,16 +134,16 @@
         android:text="Whatsapp"
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
-        app:icon="@drawable/whatsapp_second_card"
+        app:icon="@drawable/ic_whatsapp_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button_email_second_card"
+        app:layout_constraintStart_toEndOf="@+id/button_call_second_card"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button3"
+        android:id="@+id/button_email_second_card"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
@@ -150,16 +151,16 @@
         android:text="Email us"
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
-        app:icon="@drawable/mail_second_card"
+        app:icon="@drawable/ic_mail_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@id/button6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button_whatsapp_second_card"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button4"
+        android:id="@+id/button_web_second_card"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
@@ -167,13 +168,13 @@
         android:text="Website"
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
-        app:icon="@drawable/web_second_card"
+        app:icon="@drawable/ic_web_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button_call_second_card" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
@@ -186,13 +187,13 @@
         android:text="Telegram"
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
-        app:icon="@drawable/telegram_second_card"
+        app:icon="@drawable/ic_telegram_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/button_web_second_card"
+        app:layout_constraintTop_toBottomOf="@+id/button_whatsapp_second_card" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
@@ -206,13 +207,13 @@
         android:textAllCaps="false"
         android:textColor="@color/text_color_buttons_second_card"
         android:textStyle="normal"
-        app:icon="@drawable/save_second_card"
+        app:icon="@drawable/ic_save_second_card"
         app:iconGravity="textTop"
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button_email_second_card" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -231,7 +232,7 @@
         android:textColor="@color/text_color_buttons_second_card"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button_web_second_card"
         app:layout_constraintTop_toBottomOf="@+id/guideline6" />
 
     <TextView
@@ -252,7 +253,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="Open Map"
-        android:textColor="#924883"
+        android:textColor="@color/hyperlink"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView20"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
